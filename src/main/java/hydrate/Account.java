@@ -34,20 +34,16 @@ public class Account {
         int amount = sc.nextInt();
         if(amount > 0){
             balance -= amount;
-            System.out.println("thanks for withdrawin " + balance + " dollars at our bank");
+            System.out.println("thanks for withdrawing " + balance + " dollars at our bank");
             withdrawTransaction = balance;
         }
     }
 
     void getAllPreviousTransactions() {
-        System.out.println("view your previous transactions\n");
-        ArrayList<Integer> previousTransactions = new ArrayList<Integer>();
 
-        previousTransactions.add(depositTransaction);
 
-        previousTransactions.add(withdrawTransaction);
+        //i'm going to figure out how gson works so this function does not yet do anything
 
-        System.out.println(previousTransactions + " dollars");
     }
 
 
@@ -110,13 +106,12 @@ public class Account {
                     calculatedInterest(sc);
                     System.out.println("==================================================================================================================");
                 }
-                case 'F' -> {
+                case 'F' ->
                     System.out.println("Thanks for using the bank!");
 
-                }
-                default -> {
+                default ->
                     System.out.println("Error! Invalid character detected.");
-                }
+
 
 
             }
@@ -126,6 +121,4 @@ public class Account {
 
     }
 }
-
-
 
