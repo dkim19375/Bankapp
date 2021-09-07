@@ -8,8 +8,8 @@ public class Accountloader {
 
 
         try ( FileWriter writer = new FileWriter("Accounts.txt")){
-            writer.write("ur mum");
-          
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
