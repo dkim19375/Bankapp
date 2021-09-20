@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Account {
 
+    //todo use these fields or remove them!!
+
     public int depositTransaction;
     public int withdrawTransaction;
     int balance;
