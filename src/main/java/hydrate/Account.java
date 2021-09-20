@@ -40,13 +40,13 @@ public class Account {
         }
     }
 
-
     public void calculatedInterest(int years) {
 
         double interestRate = .0238;
         double newBalance = balance * (1 + interestRate * years);
     }
 
+    //todo use this somewhere please, it seems like a good concept but just not being used
     void selectionMenu() throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.println("hey there! welcome to our bank! type an option to get started!");
